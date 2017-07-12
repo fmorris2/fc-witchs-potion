@@ -13,8 +13,8 @@ import scripts.fc.framework.task.Task;
 public abstract class HettyDialogue extends Task
 {
 	private static final long serialVersionUID = 1693300668350788417L;
-	private static final Positionable HETTY_TILE = new RSTile(2967, 3206, 0);
-	private static final int DIST_THRESH = 5;
+	public static final Positionable HETTY_TILE = new RSTile(2967, 3206, 0);
+	public static final int DIST_THRESH = 5;
 
 	@Override
 	public boolean execute()

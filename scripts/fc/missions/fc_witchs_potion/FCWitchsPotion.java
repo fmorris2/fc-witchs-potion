@@ -9,8 +9,11 @@ import scripts.fc.framework.script.FCMissionScript;
 import scripts.fc.framework.task.Task;
 import scripts.fc.missions.fc_witchs_potion.data.WPReqs;
 import scripts.fc.missions.fc_witchs_potion.data.WPSettings;
+import scripts.fc.missions.fc_witchs_potion.tasks.impl.BurnBeef;
 import scripts.fc.missions.fc_witchs_potion.tasks.impl.CollectRatTail;
+import scripts.fc.missions.fc_witchs_potion.tasks.impl.DrinkFromCauldron;
 import scripts.fc.missions.fc_witchs_potion.tasks.impl.StartQuest;
+import scripts.fc.missions.fc_witchs_potion.tasks.impl.TurnInMaterials;
 
 public class FCWitchsPotion extends QuestScriptManager
 {
@@ -65,7 +68,8 @@ public class FCWitchsPotion extends QuestScriptManager
 	@Override
 	public LinkedList<Task> getTaskList()
 	{
-		return new LinkedList<>(Arrays.asList(new StartQuest(), new CollectRatTail()));
+		return new LinkedList<>(Arrays.asList(new StartQuest(), new CollectRatTail(), new BurnBeef(),
+				new TurnInMaterials(), new DrinkFromCauldron()));
 	}
 	
 	public String toString()
