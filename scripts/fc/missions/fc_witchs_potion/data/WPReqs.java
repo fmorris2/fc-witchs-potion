@@ -36,11 +36,4 @@ public class WPReqs extends ItemRequirement
 						.and(new InvBankBool(BURNT_MEAT, 1, TYPE.IN_ONE, false)))),
 		};
 	}
-
-	@Override
-	public List<Mission> getReqMissions()
-	{
-		return null;
-	}
-
 }
