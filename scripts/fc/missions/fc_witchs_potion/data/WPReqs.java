@@ -1,8 +1,5 @@
 package scripts.fc.missions.fc_witchs_potion.data;
 
-import java.util.List;
-
-import scripts.fc.framework.mission.Mission;
 import scripts.fc.framework.quest.InvBankBool;
 import scripts.fc.framework.quest.InvBankBool.TYPE;
 import scripts.fc.framework.quest.Order;
