@@ -77,4 +77,9 @@ public class FCWitchsPotion extends QuestScriptManager
 		return "Witch's Potion";
 	}
 
+	@Override
+	public int getQuestPointReward() {
+		return 1;
+	}
+
 }
